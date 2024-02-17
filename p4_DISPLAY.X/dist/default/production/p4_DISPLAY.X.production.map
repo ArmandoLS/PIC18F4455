@@ -1,0 +1,65 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Thu Jun 22 19:07:32 2023
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x0000aa
+                   .cinit    romdata   0x0000aa    program   0x000002
+.config_300000_BUILD/DEFAULT/PRODUCTION/DISPLAY    romdata   0x300000    program   0x000001
+.config_300001_BUILD/DEFAULT/PRODUCTION/DISPLAY    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/PRODUCTION/DISPLAY    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/DISPLAY    romdata   0x300003    program   0x000001
+.config_300005_BUILD/DEFAULT/PRODUCTION/DISPLAY    romdata   0x300005    program   0x000001
+.config_300006_BUILD/DEFAULT/PRODUCTION/DISPLAY    romdata   0x300006    program   0x000001
+.config_300008_BUILD/DEFAULT/PRODUCTION/DISPLAY    romdata   0x300008    program   0x000001
+.config_300009_BUILD/DEFAULT/PRODUCTION/DISPLAY    romdata   0x300009    program   0x000001
+.config_30000A_BUILD/DEFAULT/PRODUCTION/DISPLAY    romdata   0x30000a    program   0x000001
+.config_30000B_BUILD/DEFAULT/PRODUCTION/DISPLAY    romdata   0x30000b    program   0x000001
+.config_30000C_BUILD/DEFAULT/PRODUCTION/DISPLAY    romdata   0x30000c    program   0x000001
+.config_30000D_BUILD/DEFAULT/PRODUCTION/DISPLAY    romdata   0x30000d    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x0000ab      
+                            0x300000    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+            184 out of 24856 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     IA_0   0x000048    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                     IA_1   0x000052    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                   INICIO   0x00001a    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                     MAIN   0x00002a    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+           MULTIPLICACION   0x000096    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                 NEGATIVO   0x00007a    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                 POSITIVO   0x00008a    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                    RESTA   0x00006c    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                     SUMA   0x00005c    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                    TABLA   0x000004    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    TABLA   0x000004    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                   INICIO   0x00001a    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                     MAIN   0x00002a    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                     IA_0   0x000048    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                     IA_1   0x000052    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                     SUMA   0x00005c    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                    RESTA   0x00006c    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                 NEGATIVO   0x00007a    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+                 POSITIVO   0x00008a    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+           MULTIPLICACION   0x000096    program     static C:\Users\armando\Desktop\practicas_dis.prog\p4_DISPLAY.X\DISPLAY.asm
+
+

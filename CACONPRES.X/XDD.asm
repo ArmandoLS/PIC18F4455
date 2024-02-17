@@ -1,0 +1,136 @@
+; PIC18F4455 Configuration Bit Settings
+
+; Assembly source line config statements
+
+#include "p18f4550.inc"
+ 
+ CBLOCK	.0
+    I
+    J
+    NO
+ ENDC
+ ORG .0
+ 
+ GOTO SETTINGS
+        ;------RETARDO---------
+DELAY_10mS
+	MOVLW	.10
+	MOVWF	J
+DELAY_1mSS
+	MOVLW	.81
+	MOVWF	I
+	NOP
+AGAIN	    
+	DECFSZ	I
+	GOTO	AGAIN
+	DECFSZ	J
+	GOTO	DELAY_1mSS
+	RETURN
+	;------RETARDO---------
+DELAY_100mS
+    MOVLW   .64	;1CM
+    MOVWF   NO	;1CM
+    NOP	
+OTRA2
+    DECFSZ  NO	;1CM(N-1)+2CM
+    GOTO    OTRA2   ;2CM(N-1)	;1+3N=194 N=64
+    MOVLW   .255	;1CM
+    MOVWF   J	;1 CM
+DELAY_1mS
+    MOVLW   .81	;M(1CM)
+    MOVWF   I	;M(1 CM)
+    NOP		;M(1CM)
+OTRA
+    DECFSZ  I,F	;(1CM(K-1)+2CM)M
+    BRA	    OTRA;(2CM(K-1))M
+    DECFSZ  J,F	;(1CM(M-1)+2CM
+    BRA	    DELAY_1mS;(2CM(M-1))
+    RETURN	;2CM   
+    ;------RETARDO---------
+    
+SETTINGS
+    CLRF PORTE ; LIMPIAMOS PORTA
+    SETF TRISE ;SE CONVIERTEN TODOS LOS BITS A 1 (ENTRADAS)
+    MOVLW .15
+    MOVWF ADCON1
+    MOVLW .7
+    MOVWF CMCON
+    CLRF LATD; LIMPIAMOS LATB
+    CLRF TRISD; LIMPIAMOS TRISB
+
+
+MAIN
+ 
+
+    GOTO DISPLAY_0 
+    
+    MAIN2
+    
+    BTFSS   PORTE,1
+    GOTO MAIN2
+    GOTO DISPLAY_0 
+    
+P_DISPLAY_1
+    
+    BTFSS   PORTE,1
+    GOTO P_DISPLAY_1
+    GOTO DISPLAY_1
+    
+P_DISPLAY_2
+    
+    BTFSS   PORTE,1
+    GOTO P_DISPLAY_2
+    GOTO DISPLAY_2
+    
+P_DISPLAY_3
+    
+    BTFSS   PORTE,1
+    GOTO P_DISPLAY_3
+    GOTO DISPLAY_3
+    
+   ;------------------------------------------ 
+DISPLAY_0
+     MOVLW   B'00111111'
+    MOVWF PORTD
+  RETARDO_0  
+  CALL DELAY_10mS
+   BTFSC    PORTE,1
+   GOTO	    RETARDO_0
+    
+    GOTO P_DISPLAY_1
+    
+    
+DISPLAY_1
+    MOVLW   B'00000110'
+    MOVWF PORTD
+  RETARDO_1
+  CALL DELAY_10mS
+     BTFSC    PORTE,1
+   GOTO	    RETARDO_1
+    
+    GOTO P_DISPLAY_2
+    
+DISPLAY_2
+    MOVLW   B'01011011'
+    MOVWF PORTD
+    RETARDO_2
+    CALL DELAY_10mS
+     BTFSC    PORTE,1
+   GOTO	    RETARDO_2
+ 
+    GOTO P_DISPLAY_3
+    
+DISPLAY_3
+        MOVLW   B'01001111'
+    MOVWF PORTD
+    RETARDO_3
+    CALL DELAY_10mS
+     BTFSC    PORTE,1
+   GOTO	    RETARDO_3
+  
+   GOTO MAIN2
+    
+  
+    END
+
+

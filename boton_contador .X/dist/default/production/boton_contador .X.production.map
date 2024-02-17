@@ -1,0 +1,56 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Thu Jun 08 08:17:56 2023
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000098
+                   .cinit    romdata   0x000098    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000099      
+            154 out of 24856 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    AGAIN   0x000010    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+               DELAY_10MS   0x000004    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                DELAY_1mS   0x00000a    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                     DIS1   0x000042    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                     DIS2   0x00005a    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                     DIS3   0x000072    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                     DIS4   0x00008a    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                     MAIN   0x00002a    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                    OTRA1   0x000034    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                    OTRA2   0x00004c    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                    OTRA3   0x000064    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                    OTRA4   0x00007c    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                 SETIINGS   0x00001a    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+               DELAY_10MS   0x000004    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                DELAY_1mS   0x00000a    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                    AGAIN   0x000010    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                 SETIINGS   0x00001a    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                     MAIN   0x00002a    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                    OTRA1   0x000034    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                     DIS1   0x000042    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                    OTRA2   0x00004c    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                     DIS2   0x00005a    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                    OTRA3   0x000064    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                     DIS3   0x000072    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                    OTRA4   0x00007c    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+                     DIS4   0x00008a    program     static C:\Users\armando\Desktop\practicas_dis.prog\boton_contador .X\contador_botonA.asm
+
+

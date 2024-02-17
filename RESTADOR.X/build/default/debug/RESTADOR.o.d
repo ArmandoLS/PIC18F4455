@@ -1,0 +1,3 @@
+build/default/debug/RESTADOR.o:  \
+	E:/DISPOSITIVOS\ PROGRAMABLES/RESTADOR.X/RESTADOR.asm  \
+

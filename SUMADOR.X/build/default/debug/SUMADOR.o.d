@@ -1,0 +1,3 @@
+build/default/debug/SUMADOR.o:  \
+	E:/DISPOSITIVOS\ PROGRAMABLES/SUMADOR.X/SUMADOR.asm  \
+

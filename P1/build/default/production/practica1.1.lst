@@ -1,0 +1,70 @@
+MPASM 5.87                   PRACTICA1.1.ASM   3-5-2023  12:20:15         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 
+                      00002 ;este programa realiza las opereciones entre el datoA y datoB
+                      00003     
+Warning[205]: Found directive in column 1. (ORG)
+                      00004 ORG 0
+                      00005     
+Warning[207]: Found label after column 1. (DATO_A)
+  0000000F            00006     DATO_A   EQU .15
+Warning[207]: Found label after column 1. (DATO_B)
+  00000064            00007     DATO_B   EQU .100
+                      00008  
+Warning[207]: Found label after column 1. (SUMA)
+000000                00009     SUMA 
+000000 0E0F           00010         MOVLW DATO_A 
+000002 0F64           00011         ADDLW DATO_B
+                      00012         
+Warning[207]: Found label after column 1. (RESTA)
+000004                00013     RESTA
+000004 0E0F           00014         MOVLW DATO_A
+000006 0864           00015         SUBLW DATO_B
+                      00016         
+Warning[207]: Found label after column 1. (MULTIPLICACION)
+000008                00017     MULTIPLICACION
+000008 0E0F           00018         MOVLW DATO_A
+00000A 0D64           00019         MULLW DATO_B
+                      00020         
+Warning[207]: Found label after column 1. (AND)
+00000C                00021     AND
+00000C 0E0F           00022         MOVLW DATO_A
+00000E 0B64           00023         ANDLW DATO_B
+                      00024         
+Warning[207]: Found label after column 1. (OR)
+000010                00025     OR
+000010 0E0F           00026         MOVLW DATO_A
+000012 0964           00027         IORLW DATO_B
+                      00028 
+Warning[207]: Found label after column 1. (XOR)
+000014                00029     XOR
+000014 0E0F           00030         MOVLW DATO_A
+000016 0A64           00031         XORLW DATO_B
+                      00032         
+                      00033         
+                      00034         END 
+MPASM 5.87                   PRACTICA1.1.ASM   3-5-2023  12:20:15         PAGE  2
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+AND                               0000000C
+DATO_A                            0000000F
+DATO_B                            00000064
+MULTIPLICACION                    00000008
+OR                                00000010
+RESTA                             00000004
+SUMA                              00000000
+XOR                               00000014
+__18F4550                         00000001
+
+Errors   :     0
+Warnings :     9 reported,     0 suppressed
+Messages :     0 reported,     0 suppressed
+
+
